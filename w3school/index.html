@@ -1,0 +1,1803 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Freckle+Face&family=Source+Sans+Pro:wght@200;400&display=swap');
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin:0px;
+        }
+         h1, h2, h3, h4, h5, h6 {
+              font-family: 'Source Sans Pro', sans-serif;
+            }
+            h2{
+                font-size: 45px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+            button
+            {
+                border-style: none;
+            }
+            .tutorial0
+        {
+            background-color: #282A35;
+            padding-top: 64px;
+            padding-bottom: 64px;
+            
+        }
+
+       .code
+       {
+           padding: 16px;
+           max-width:645px;
+           background-color: #E7E9EB;
+            width:50%;   
+            border-radius: 5px;   
+       }
+       .code-data
+       {
+           width:100%;
+           background-color: white;
+             border-left: 3px solid #04AA6D;
+       }
+       .code-button
+       {
+           border-style: none;
+           background-color: #04AA6D;
+           border-radius: 25px;
+    font-size: 18px;
+    color: white;
+   min-width: 200px;
+    padding: 12px;
+    width:50%;
+   margin-top: 10px;
+   
+  
+       }
+       .htmltext{
+           width:30%;
+          border: 0px solid red;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+       }
+    
+       .htmltext p
+       {
+           font-size: 100px;
+           color: white;
+           font-weight: 700;
+           margin-top: 0px;
+           margin-bottom: 0px;
+           text-align: center;
+           font-family: 'Source Sans Pro', sans-serif;
+       }
+       .fullhtml
+       {
+        width:80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+       }
+        .container
+        {
+            background-color: #282A35;
+            padding-top: 64px;
+            padding-bottom: 64px;
+        }
+        .box
+        {
+            margin-left:auto;
+            margin-right:auto;
+            width:90%;
+          
+            display:flex;
+             flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 5%;
+
+        }
+        .box-1
+        {
+             background-color: #FFC0C7;  
+             padding: 24px;
+             text-align: center;
+             width:43%;
+             border-radius: 10px;
+        }
+         .button-1
+         {
+             padding: 12px;
+             background-color: #282A35;
+             color:white;
+             border-radius: 25px;
+             width:40%;
+             cursor: pointer;
+         }
+         .button-2
+         {
+             width:10%;
+              background-color: #282A35;
+             color:white;
+             border-radius: 25px;
+             padding-top:10px ;
+             padding-bottom: 10px;
+             padding-left: 0px;
+             padding-right: 0px;
+             margin-top: 10px;
+              cursor: pointer;
+              min-width:200px;
+         }
+       .small{
+           padding: 24px;
+          
+           color:black;
+           width:20%;
+           text-align: center;
+           border-radius: 5px;
+           cursor: pointer;
+       }
+       .container-1
+       {
+           background-color: #F3ECEA;
+            padding-top: 78px;
+            padding-bottom: 95px;
+       }
+       .container-2
+       {
+           padding-top: 40px;
+           padding-bottom: 40px;
+           background-color: #96D4D4;
+           text-align: center;
+       }
+       .container-3
+       {
+           padding-top:64px;
+           padding-bottom: 64px;
+           text-align: center;
+             background-color: #282A35;
+             color:white;
+       }
+       .btn-3
+       {
+           display: flex;
+           margin-left: auto;
+           margin-right: auto;
+            width:80%;
+            justify-content: space-around;
+            flex-wrap: wrap;
+       }
+       .one{
+           width:30%;
+           background-color: #04aa6b;
+           font-size: 19px;
+           padding: 17px;
+           color: white;
+           border-radius: 5px;
+            cursor: pointer;
+            min-width: 180px;
+       }
+       .two
+       {
+           width:10%; 
+           min-width:50px;
+           padding: 17px;
+            cursor: pointer;
+       }
+       .btn-31
+       {
+           margin-top: 40px;
+       }
+       .container-4
+       {
+           background-color: #E7E9EB;
+           padding-top: 24px;
+           padding-bottom: 90px;
+           padding-left: 24px;
+           padding-right: 24px;
+           text-align: center;
+       }
+       .img-4
+       {
+           width:60%;
+           display:block;
+           margin-left: auto;
+           margin-right:auto;
+       }
+       .temp
+       {
+           border-radius: 25px;
+           margin-top: 50px;
+           padding: 16px;
+           font-size: 18px;
+           min-width:280px;
+       }
+       .container-5
+       {
+          padding-left: 60px;
+          padding-right: 60px;
+          padding-bottom: 64px;
+          padding-top: 10px;
+           background-color: #282A35;
+           position: relative;
+       }
+       .h2
+       {
+             font-size: 62px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-family: 'Source Sans Pro', sans-serif;
+    color:#FFC0C7;
+       }
+       .three
+       {
+           background-color: #04aa6b;
+           width:10%;
+           border-radius: 25px;
+           color:white;
+             border-radius: 25px;
+             padding: 12px;
+             font-weight: bold;
+             min-width: 200px;
+       }
+       
+       .container-6
+       {
+           padding-left: 24px;
+           padding-right: 24px;
+           padding-top: 48px;
+           padding-bottom:80px;
+           text-align: center;
+           margin-top: 10px;
+       }
+        .text-1
+        {
+            width:45%;
+            display: flex;
+            border: 5px solid #ddd;
+        }
+        .menu
+        {
+            background-color: black;
+            color:white;
+            width:30%;
+            text-align: center;
+        }
+        .menu p
+        {
+            cursor: pointer;
+            color:#818181;
+        }
+        .menu p:hover
+        {
+            color: white;
+        }
+       .textarea-1
+       {
+           background-color: white;
+           padding: 20px;
+           width:70%;
+           height: 160px;
+           overflow: auto;
+       }
+       .menu1
+       {
+           
+            width:30%;
+            text-align: center;
+            background-color:#ddd;
+       }
+       .menu1 p
+       {
+            cursor: pointer;
+            color:#2196F3;
+       }
+       .menu1 p:hover
+        {
+            color:black;
+        }
+        .full-row
+        {
+            display: flex;
+            justify-content: space-between;
+            width:65%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #Hide-1
+        {
+            display: none;
+        }
+        .container-7
+        {
+            padding: 32px 16px;
+            background-color: #282A35;
+        }
+        .footer-1
+        {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .footbut{
+            display: flex;
+            
+        }
+        .footbut p{
+            color:white;
+            margin-left: 10px;
+        }
+        .footbut-one
+        {
+            border-style: none;
+            padding:8px 16px;
+            border-radius: 5px;
+            color:black;
+            background-color: white;
+            margin-left:10px;
+        }
+
+        /*header*/
+         .navbar
+        {
+            padding-right:12px;
+            padding-left: 16px;
+           
+           display: flex;
+           justify-content: space-between;
+           position: relative;
+        }
+        ul{
+            padding: 0px;
+            display: flex;
+            margin: 0px;
+        }
+        li{
+            list-style: none;
+            padding: 28px 16px;
+            
+           margin-left: 10px;
+            
+            font-weight: 700;
+            font-size: 18px;
+        }
+        .Menu
+        {
+            display: none;
+        }
+        .navbar-left
+        {
+            display: flex;
+        }
+        .navbar-left img
+        {
+            width: 10%;
+            object-fit: cover;
+        }
+        li:hover
+        {
+            background-color: #04AA6D;
+        }
+        .icon
+        {
+             padding: 30px 16px;
+             margin-left: auto;
+             margin-right: auto;
+        }
+        .paid
+        {
+            
+            border-radius: 25px;
+            padding: 8px 16px;
+            margin-right: 15px;
+            font-size: 18px;
+            font-family:'Source Sans Pro', sans-serif;
+        }
+        .paid:hover
+        {
+background-color: #04AA6D;
+        }
+        .icon:hover
+        {
+            color:#04AA6D;
+        }
+   
+        .exercises
+        {
+             width:100%;
+             background-color: #282A35;
+             padding: 24px 16px;
+             display: none;
+             position: absolute;
+  left: 0px;
+  top: 90px;
+        }
+        .exe-content
+        {
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: space-around;
+        }
+        .content{
+          width:23%; 
+          
+        }
+        .content ul
+        {
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+        }
+        .content li
+        {
+            list-style: none;
+            width:100%;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            padding-left: 6px;
+            margin-top:20px;
+            font-size: 18px;
+            color: white;
+            font-weight: bold;
+            font-family:'Source Sans Pro', sans-serif;
+
+        }
+        .tut-hide,.exe-hide,.ref-hide
+        {
+            cursor: pointer;
+            font-family: 'Source Sans Pro', sans-serif;;
+        }
+        .content h2
+        {
+            margin-top: 10px;
+            margin-bottom:16px ;
+            color:#FFF4A3;
+            font-family:'Source Sans Pro', sans-serif;
+            font-size: 24px;
+        }
+        .content li:hover{
+            background-color: white;
+            color:#282A35;
+        }
+        .references
+        {
+             width:100%;
+             background-color: #282A35;
+             padding: 24px 16px;
+            z-index: 1;
+            display: none;
+            position: absolute;
+  left: 0px;
+  top: 90px;
+        }
+        .ref-content
+        {
+            width:70%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+             flex-wrap: wrap;
+        }
+         .ref-content .content
+        {
+            width:25%;
+                 
+        }
+        .ref-content ul
+        {
+            padding: 0px;
+        }
+        .ref-content .content li
+        {
+            list-style: none;
+            width:100%;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            padding-left: 4px;
+            margin-top:20px;
+            font-size: 18px;
+            color: white;
+            font-weight: bold;
+            font-family:'Source Sans Pro', sans-serif;
+
+        }
+        .ref-content .content h2
+        {
+            margin-top: 10px;
+            margin-bottom:16px ;
+            color:#FFF4A3;
+            font-family:'Source Sans Pro', sans-serif;
+            font-size: 24px;
+        }
+        .ref-content .content li:hover{
+            background-color: white;
+            color:#282A35;
+        }
+        .tutorial {
+            width: 100%;
+            background-color: #282A35;
+            padding: 24px 16px;
+display: none;
+
+        }
+
+        .tut-content {
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+             flex-wrap: wrap;
+        }
+
+        .tut-content .content {
+            width: 25%;
+
+        }
+
+        .tut-content ul {
+            padding: 0px;
+        }
+
+        .tut-content .content li {
+            list-style: none;
+            width: 100%;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            padding-left: 4px;
+            margin-top: 20px;
+            font-size: 18px;
+            color: white;
+            font-weight: bold;
+            font-family: 'Source Sans Pro', sans-serif;
+
+        }
+
+        .tut-content .content h2 {
+            margin-top: 10px;
+            margin-bottom: 16px;
+            color: #FFF4A3;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 24px;
+        }
+
+        .tut-content .content li:hover {
+            background-color: white;
+            color: #282A35;
+        }
+        .paid-hide,.shop-hide
+        {
+            display: none;
+        }
+        /*header*/
+        @media only screen and (max-width:970px)
+        {
+        .small{
+            width:40%;
+            margin-top: 5%;
+        }
+        .box{
+            margin: 0px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .box-1
+        {
+            width:100%;
+            margin-top: 5%;
+            
+        }
+        .full-row
+        {
+            width:100%;
+        }
+        .text-1
+        {
+          width:100%;
+        }
+        .text-12
+        {
+        display: none;
+        }
+     .btn-3
+     {
+         width: 100%;
+     }
+     #Hide-0
+     {
+         display: none;
+     }
+        }
+        @media(min-width:856px) and (max-width:990px)
+        {
+            .exe-hide
+            {
+                display: none;
+            }
+             .tut-content .content {
+            width: 50%;
+        }
+          .ref-content .content
+        {
+            width:50%;
+                 
+        }
+        .navbar-left img
+        {
+            width: 8%;
+        }
+        .tut-hide,.ref-hide
+        {
+            display: block;
+        }
+        }
+        @media (max-width:853px) {
+            
+            .Menu
+            {
+                display: block;
+                
+                cursor: pointer;
+                font-family: 'Source Sans Pro', sans-serif;;
+            }
+             .hide-paid 
+            {
+                display: none;
+            }
+             .navbar-left img
+        {
+            width: 30%;
+            object-fit: cover;
+        }
+        .menu-list
+        {
+            display: flex;
+            flex-direction: column;
+             position: absolute;
+             top:88px;
+             margin-left: auto;
+             margin-right: auto;
+             width:100%;
+            
+             display: none;
+             background-color: #e7e9eb;
+             left: 0px;
+             
+        }
+        .menu-list li 
+        {
+           
+            width: 100%;
+             margin-left: 0px;
+            text-align: center;
+        }
+        .paid-hide,.shop-hide
+        {
+            display: block;
+            font-family: 'Source Sans ',sans-serif;
+        }
+         .icon
+        {
+             padding: 30px 8px;
+             margin-left: auto;
+             margin-right: auto;
+        }
+        i{
+            font-size: 10px;
+        }
+        }
+        @media only screen and (max-width:800px)
+       {
+           .fullhtml
+           {
+               display: flex;
+               flex-direction: column;
+               width:100%;
+           }
+            .htmltext
+           {
+               width:100%;
+           }
+           .code
+           {
+               width:100%;
+               margin-top: 30px;
+               margin-left: auto;
+               margin-right: auto;
+           }
+       }
+        @media only screen and (max-width:599px)
+        {
+            .small{
+                width:100%;
+            }
+            .three
+            {
+                width:100%;
+            }
+            .btn-3
+            {
+                width: 100%;
+               
+            }
+            #Hide-1
+            {
+                display: block;
+            }
+            .one
+            {
+                
+                width: 90%;
+                margin-bottom: 5%;
+                margin-left: auto;
+                margin-right: auto;
+               
+            }
+            .two
+            {
+                display: none;
+            }
+            .temp1
+            {
+                width:100%;
+            }
+            .footer-1
+            {
+                flex-direction: column;
+                
+            }
+            .footbut
+            {
+                margin-left: auto;
+                margin-right: auto;
+            }
+             .code
+           {
+               display: none;
+           }
+           .fullhtml
+           {
+               width:100%;
+           }
+           .htmltext
+           {
+               width:100%;
+           }
+           .htmltext p {
+          font-size: 60px;
+           }
+        }
+    </style>
+</head>
+<body>
+<section class="navbar">
+    <div class="navbar-left">
+        <img src="w3logo.jpg">
+        <ul>
+            <li class="Menu" onclick="menu()">Menu</li>
+        </ul>
+        <ul class="menu-list">
+            <li onclick="tut()" class="tut-hide">Tutorials</li>
+            <li onclick="ref()" class="ref-hide">Reference</li>
+            <li onclick="exe()" class="exe-hide">Exercises</li>
+            <li class="paid-hide">Paid Courses</li>
+            <li class="shop-hide">Shop</li>
+        </ul>
+    </div>
+    <div class="navbar-right">
+        <div style="display: flex;align-content: center;">
+            <div class="icon"><i class="fa fa-circle-o" style="font-size:24px"></i></div>
+            <div class="icon"><i class="fa fa-globe" style="font-size:24px"></i></div>
+            <div class="icon"><i class="fa fa-search" style="font-size:24px"></i></div>
+            <div style="margin-top: 24px;margin-bottom: 24px;" class="hide-paid">
+                <div class="paid ">Paid Courses</div>
+            </div>
+            <div style="margin-top: 24px;margin-bottom: 24px;">
+                <div class="paid" style="background-color: #04AA6D;min-width:100px;text-align: center;color:white">Log
+                    In</div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="exercises" style="margin-top: 0px;">
+    <h1 style="color:#FFF4A3;text-align: center;font-family:'Source Sans Pro', sans-serif ;">Exercises</h1>
+    <div class="exe-content">
+
+        <div class="content">
+            <h2 style="color: #FFF4A3;">Exercises</h2>
+            <ul>
+
+                <li>
+                    HTML Exercises
+                </li>
+                <li>
+                    CSS Exercises
+                </li>
+                <li>
+                    Javascript Exercises
+                </li>
+                <li>
+                    SQL Exercises
+                </li>
+                <li>
+                    MYSQL Exercises
+                </li>
+                <li>
+                    PHP Exercises
+                </li>
+                <li>
+                    Python Exercises
+                </li>
+                <li>
+                    Numpy Exercises
+                </li>
+                <li>
+                    Pandas Exercises
+                </li>
+                <li>
+                    Scipy Exercises
+                </li>
+                <li>
+                    Jquery Exercises
+                </li>
+                <li>
+                    Java Exercises
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2 style="color: #FFF4A3;">Courses</h2>
+            <ul>
+
+                <li>
+                    HTML Course
+                </li>
+                <li>
+                    CSS Course
+                </li>
+                <li>
+                    Javascript Course
+                </li>
+                <li>
+                    SQL Course
+                </li>
+                <li>
+                    MYSQL Course
+                </li>
+                <li>
+                    PHP Course
+                </li>
+                <li>
+                    Python Course
+                </li>
+                <li>
+                    Numpy Course
+                </li>
+                <li>
+                    Pandas Course
+                </li>
+                <li>
+                    Scipy Course
+                </li>
+                <li>
+                    Jquery Course
+                </li>
+                <li>
+                    Java Course
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2 style="color: #FFF4A3;">Quizzes</h2>
+            <ul>
+
+                <li>
+                    HTML Quiz
+                </li>
+                <li>
+                    CSS Quiz
+                </li>
+                <li>
+                    Javascript Quiz
+                </li>
+                <li>
+                    SQL Quiz
+                </li>
+                <li>
+                    MYSQL Quiz
+                </li>
+                <li>
+                    PHP Quiz
+                </li>
+                <li>
+                    Python Quiz
+                </li>
+                <li>
+                    Numpy Quiz
+                </li>
+                <li>
+                    Pandas Quiz
+                </li>
+                <li>
+                    Scipy Quiz
+                </li>
+                <li>
+                    Jquery Quiz
+                </li>
+                <li>
+                    Java Quiz
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="references">
+    <h1 style="color:#FFF4A3;text-align: center;font-family:'Source Sans Pro', sans-serif ;">Reference</h1>
+    <div class="ref-content">
+
+        <div class="content">
+            <h2 style="color: #FFF4A3;">HTML</h2>
+            <ul>
+
+                <li>
+                    HTML Tag Reference
+                </li>
+                <li>
+                    HTML Browser Reference
+                </li>
+                <li>
+                    HTML Color Reference
+                </li>
+                <li>
+                    HTML Attribute Reference
+                </li>
+                <li>
+                    HTML Canvas Reference
+                </li>
+                <li>
+                    HTML SVG Reference
+                </li>
+                <li>
+                    HTML Event Reference
+                </li>
+                <li>
+                    Color Reference
+                </li>
+
+            </ul>
+            <h2 style="color: #FFF4A3;">CSS</h2>
+            <ul>
+
+                <li>
+                    CSS Reference
+                </li>
+                <li>
+                    CSS Browser Reference
+                </li>
+                <li>
+                    CSS Selector Reference
+                </li>
+                <li>
+                    BootStrap 3 Reference
+                </li>
+                <li>
+                    BootStrap 4 Reference
+                </li>
+                <li>
+                    W3.CSS Reference
+                </li>
+                <li>
+                    Icon Reference
+                </li>
+                <li>
+                    Sass Reference
+                </li>
+
+            </ul>
+        </div>
+        <div class="content">
+            <h2 style="color: #FFF4A3;">JAVASCRIPT</h2>
+            <ul>
+
+                <li>
+                    Javscript Reference
+                </li>
+                <li>
+                    HTML DOM Reference
+                </li>
+                <li>
+                    Jquery Reference
+                </li>
+                <li>
+                    AngularJs Reference
+                </li>
+                <li>
+                    Appml Reference
+                </li>
+                <li>
+                    W3.JS Reference
+                </li>
+
+
+            </ul>
+            <h2 style="color: #FFF4A3;">Programming</h2>
+            <ul>
+
+                <li>
+                    Python Reference
+                </li>
+                <li>
+                    Java Reference
+                </li>
+
+
+            </ul>
+        </div>
+        <div class="content">
+            <h2 style="color: #FFF4A3;">Server Side</h2>
+            <ul>
+
+                <li>
+                    SQL Reference
+                </li>
+                <li>
+                    Python Reference
+                </li>
+                <li>
+                    MYSQL Reference
+                </li>
+                <li>
+                    ASP Reference
+                </li>
+
+
+
+            </ul>
+            <h2 style="color: #FFF4A3;">XML</h2>
+            <ul>
+
+                <li>
+                    XML DOM Reference
+                </li>
+                <li>
+                    XML Http Reference
+                </li>
+                <li>
+                    XML Schema Reference
+                </li>
+                <li>
+                    XSLT Reference
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2 style="color: #FFF4A3;">Character Sets</h2>
+            <ul>
+
+                <li>
+                    HTML Character Sets
+                </li>
+                <li>
+                    HTML ANSI
+                </li>
+                <li>
+                    HTML ASCII
+                </li>
+                <li>
+                    HTML Windows-1252
+                </li>
+                <li>
+                    HTML 1252
+                </li>
+                <li>
+                    HTML UTF-8
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="tutorial">
+    <h1 style="color:#FFF4A3;text-align: center;font-family:'Source Sans Pro', sans-serif ;">Tutorial</h1>
+    <div class="tut-content">
+
+        <div class="content">
+            <h2 style="color: #FFF4A3;">HTML and CSS</h2>
+            <ul>
+
+                <li>
+                    Learn HTML
+                </li>
+                <li>
+                    Learn CSS
+                </li>
+                <li>
+                    Learn Icons
+                </li>
+                <li>
+                    Learn W3
+                </li>
+                <li>
+                    Learn Canvas
+                </li>
+                <li>
+                    Learn SVG
+                </li>
+                <li>
+                    Learn SASS
+                </li>
+                <li>
+                    Learn HOWTO
+                </li>
+
+            </ul>
+
+        </div>
+        <div class="content">
+            <h2 style="color: #FFF4A3;">JAVASCRIPT</h2>
+            <ul>
+
+                <li>
+                    Learn Javascript
+                </li>
+                <li>
+                    Learn React
+                </li>
+                <li>
+                    Learn Jquery
+                </li>
+                <li>
+                    Learn Ajax
+                </li>
+                <li>
+                    Learn AppMl
+                </li>
+                <li>
+                    Learn W3.JS
+                </li>
+                <li>
+                    Learn Angular JS
+                </li>
+
+
+            </ul>
+            <h2 style="color: #FFF4A3;">Programming</h2>
+            <ul>
+
+                <li>
+                    Learn C
+                </li>
+                <li>
+                    Learn C++
+                </li>
+                <li>
+                    Learn Java
+                </li>
+                <li>
+                    Learn Python
+                </li>
+                <li>
+                    Learn R
+                </li>
+                <li>
+                    Learn Kotlin
+                </li>
+
+            </ul>
+        </div>
+        <div class="content">
+            <h2 style="color: #FFF4A3;">Server Side</h2>
+            <ul>
+
+                <li>
+                    Learn SQl
+                </li>
+                <li>
+                    Learn Mysql
+                </li>
+                <li>
+                    Learn Node.js
+                </li>
+                <li>
+                    Learn PHP
+                </li>
+                <li>
+                    Learn GIT
+                </li>
+
+
+
+            </ul>
+            <h2 style="color: #FFF4A3;">Web Building</h2>
+            <ul>
+
+                <li>
+                    Web Development
+                </li>
+                <li>
+                    Web Statistics
+                </li>
+                <li>
+                    Web Certificates
+                </li>
+                <li>
+                    Web Editor
+                </li>
+                <li>
+                    Web Templates
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2 style="color: #FFF4A3;">Artifical Intelligence</h2>
+            <ul>
+
+                <li>
+                    Learn AI
+                </li>
+                <li>
+                    Learn Scipy
+                </li>
+                <li>
+                    Learn Pandas
+                </li>
+                <li>
+                    Learn Matplotlib
+                </li>
+                <li>
+                    Learn Statistics
+                </li>
+                <li>
+                    Learn Machine learning
+                </li>
+                <li>
+                    Learn Data Science
+                </li>
+
+
+            </ul>
+            <h2 style="color: #FFF4A3;">XML tutorial</h2>
+            <ul>
+
+                <li>
+                    Learn XML
+                </li>
+                <li>
+                    Learn XML AJAX
+                </li>
+                <li>
+                    Learn XML DOD
+                </li>
+                <li>
+                    Learn XML DTD
+                </li>
+                <li>
+                    Learn XML Schema
+                </li>
+                <li>
+                    Learn XSLT
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+<section class="tutorial0">
+    <div class="fullhtml">
+        <div class="htmltext">
+            <p>HTML</p>
+            <p style="font-size: 19px;text-align: center;">The language for building web pages</p>
+
+            <div style="margin-top: 10px;"><button class="code-button"><b>Learn HTML</b></button></div>
+            <div style="margin-top: 10px;"> <button class="code-button"
+                    style="background-color: white;color: #282A35;"><b>HTML Reference</b></button></div>
+        </div>
+        <div class="code">
+            <h2>HTML Example:</h2>
+            <div class="code-data">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red">
+                        html</span>
+                    <span style="color:mediumblue">&gt;</span></span>
+                <div>
+                    <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+                <div>
+                    <span style="color:brown"><span style="color:mediumblue">&lt;</span>title<span
+                            style="color:mediumblue">&gt;</span></span>
+                    HTML TUTORIAL
+                    <span style="color:brown"><span style="color:mediumblue">&lt;</span>/title<span
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+                <div>
+                    <span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+                <div style="margin-top: 10px;">
+                    <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span
+                            style="color:mediumblue">&gt;</span></span>
+                    This is heading
+                    <span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span
+                            style="color:mediumblue">&gt;</span></span>
+                    This is paragraph
+                    <span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+                <div>
+                    <span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+                <div>
+                    <span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+            </div>
+            <button class="code-button">Try it yourself</button>
+        </div>
+    </div>
+</section>
+<section class="tutorial0" style="background-color: #FFF4A3;">
+    <div class="fullhtml">
+        <div class="htmltext">
+            <p style="color:#282A35">PYTHON</p>
+            <p style="font-size: 19px;text-align: center;color:#282A35">A popular Programming language</p>
+
+            <div style="margin-top: 10px;"><button class="code-button"><b>Learn PYTHON</b></button></div>
+            <div style="margin-top: 10px;"> <button class="code-button"
+                    style="background-color: white;color: #282A35;font-size: 18px;"><b>PYTHON Reference</b></button>
+            </div>
+        </div>
+        <div class="code">
+            <h2>PYTHON Example:</h2>
+            <div class="code-data" style="height:167px;">
+
+                <div>
+                    <span class="jskeywordcolor" style="color:mediumblue">if</span> <span class="jsnumbercolor"
+                        style="color:red">5</span>
+                    &gt; <span class="jsnumbercolor" style="color:red">2</span>
+                </div>
+                <div>
+                    &nbsp; print(<span class="jsstringcolor" style="color:brown">"Five is greater than
+                        two!"</span>)<span class="jsnumbercolor" style="color:red">
+                    </span> </span>
+                </div>
+
+            </div>
+            <button class="code-button">Try it yourself</button>
+        </div>
+    </div>
+</section>
+<section class="tutorial0">
+    <div class="fullhtml">
+        <div class="htmltext">
+            <p>SQL</p>
+            <p style="font-size: 19px;text-align: center;">A language for acccessing databases</p>
+
+            <div style="margin-top: 10px;"><button class="code-button"><b>Learn SQL</b></button></div>
+            <div style="margin-top: 10px;"> <button class="code-button"
+                    style="background-color: white;color: #282A35;font-size: 18px;"><b>SQL Reference</b></button>
+            </div>
+        </div>
+        <div class="code">
+            <h2>SQL Example:</h2>
+            <div class="code-data" style="height:167px;">
+
+                <div>
+                    <span class="sqlkeywordcolor" style="color:mediumblue">SELECT</span> * <span class="sqlkeywordcolor"
+                        style="color:mediumblue">FROM</span>&nbsp;Customers
+                </div>
+                <div>
+                    <span class="sqlkeywordcolor" style="color:mediumblue">WHERE</span>&nbsp;&nbsp;Country&nbsp;&nbsp;=
+                    <span class="sqlstringcolor" style="color:brown">'Mexico'</span>;
+                </div>
+
+            </div>
+            <button class="code-button">Try it yourself</button>
+        </div>
+    </div>
+</section>
+<section class="tutorial0" style="background-color: #D9EEE1;">
+    <div class="fullhtml">
+        <div class="htmltext">
+            <p style="color: #282A35;">CSS</p>
+            <p style="font-size: 19px;text-align: center;color: #282A35;">A language for styling webpages</p>
+
+            <div style="margin-top: 10px;"><button class="code-button"><b>Learn CSS</b></button></div>
+            <div style="margin-top: 10px;"> <button class="code-button"
+                    style="background-color: white;color: #282A35;font-size: 18px;"><b>CSS Reference</b></button>
+            </div>
+        </div>
+        <div class="code">
+            <h2>CSS Example:</h2>
+            <div class="code-data" style="height:167px;">
+
+                <div> <span class="cssselectorcolor" style="color:brown">
+                        &nbsp;body <span class="cssdelimitercolor" style="color:black">{</span>
+                </div>
+                <div style="margin-top: 10px;"> <span class="cssselectorcolor" style="color:brown">
+                        &nbsp; background-color <span class="cssdelimitercolor"
+                            style="color:mediumblue">:lightblue</span>
+                </div>
+                <div style="margin-top: 10px;">
+                    <span class="cssdelimitercolor" style="color:black">&nbsp;}</span>
+                </div>
+                <div style="margin-top: 10px;"><span style="color: brown;">&nbsp;h1</span><span
+                        class="cssdelimitercolor" style="color:black">{</span></div>
+                <div style="margin-top: 10px;"> <span class="cssselectorcolor" style="color:brown">
+                        &nbsp; background-color <span class="cssdelimitercolor" style="color:mediumblue">:blue</span>
+                </div>
+                <div style="margin-top: 10px;">
+                    <span class="cssdelimitercolor" style="color:black">&nbsp;}</span>
+                </div>
+            </div>
+            <button class="code-button">Try it yourself</button>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+    <section class="container">
+      <div class="box ">
+          <div class="box-1">
+                <h2 >PHP</h2>
+                    <div style="height: 70px;">
+                <h3>A web server programming language</h3>
+                </div>
+                <button class="button-1"><b>Learn PHP</b></button>
+          </div>
+        <div class="box-1" style="background-color: #FFF4A3;">
+            <h2>jQuery</h2>
+            <div style="height: 70px;">
+                <h3>A JS library for developing web pages</h3>
+            </div>
+            <button class="button-1"><b>Learn jQuery</b></button>
+        </div>
+    </div>
+    <div class="box ">
+        <div class="box-1" style="background-color: #F3ECEA;">
+            <h2>Java</h2>
+            <div style="height: 70px;">
+                <h3>A programming language</h3>
+            </div>
+            <button class="button-1"><b>Learn java</b></button>
+        </div>
+        <div class="box-1" style="background-color: #D9EEE1;">
+            <h2>C++</h2>
+            <div style="height: 70px;">
+                <h3>A programming language</h3>
+            </div>
+            <button class="button-1"><b>Learn C++</b></button>
+        </div>
+    </div>
+    <div class="box ">
+        <div class="box-1" style="background-color: #96D4D4;">
+            <h2>W3.CSS</h2>
+            <div style="height: 70px;">
+                <h3>A CSS framework for faster and better responsive web pages</h3>
+            </div>
+            <button class="button-1" style="margin-bottom: 10%;"><b>Learn W3.CSS</b></button>
+        </div>
+        <div class="box-1" style="background-color: #E7E9EB;">
+            <h2>Bootstrap</h2>
+            <div style="height: 70px;">
+                <h3>A CSS framework for designing better web pages</h3>
+            </div>
+            <div><button class="button-1"  style="margin-bottom: 5%;"><b>Learn BS3</b></button></div>
+            <div><button class="button-1" style="margin-bottom: 5%;"><b>Learn BS4</b></button></div>
+        </div>
+    </div>
+    <div class="box">
+     <div class="small" style="background-color: #FFC0C7;"><h2>C#</h2></div>
+    <div class="small" style="background-color: #FFF4A3;"><h2>R</h2></div>
+    <div class="small" style="background-color: #F3ECEA;"><h2>Kotlin</h2></div>
+    <div class="small" style="background-color: #96D4D4;"><h2>MySql</h2></div>
+    </div>
+    <div class="box">
+        <div class="small" style="background-color: #FFC0C7;">
+            <h2>Node </h2>
+        </div>
+        <div class="small" style="background-color: #FFF4A3;">
+            <h2>React</h2>
+        </div>
+        <div class="small" style="background-color: #F3ECEA;">
+            <h2>JSON</h2>
+        </div>
+        <div class="small" style="background-color: #96D4D4;">
+            <h2>Angular</h2>
+        </div>
+    </div>
+    <div class="box">
+        <div class="small" style="background-color: #FFC0C7;">
+            <h2>SVG</h2>
+        </div>
+        <div class="small" style="background-color: #FFF4A3;">
+            <h2>Canvas</h2>
+        </div>
+        <div class="small" style="background-color: #F3ECEA;">
+            <h2>Graphics</h2>
+        </div>
+        <div class="small" style="background-color: #96D4D4;">
+            <h2>RWD</h2>
+        </div>
+    </div>
+    <div class="box">
+        <div class="small" style="background-color: #FFC0C7;">
+            <h2>Icons</h2>
+        </div>
+        <div class="small" style="background-color: #FFF4A3;">
+            <h2>SASS</h2>
+        </div>
+        <div class="small" style="background-color: #F3ECEA;">
+            <h2>W3.JS</h2>
+        </div>
+        <div class="small" style="background-color: #96D4D4;">
+            <h2>XML</h2>
+        </div>
+    </div>
+    <div class="box">
+        <div class="small" style="background-color: #FFC0C7;">
+            <h2>Cyber</h2>
+        </div>
+        <div class="small" style="background-color: #FFF4A3;">
+            <h2>Colors</h2>
+        </div>
+        <div class="small" style="background-color: #F3ECEA;">
+            <h2>Git</h2>
+        </div>
+        <div class="small" style="background-color: #96D4D4;">
+            <h2>Pandas</h2>
+        </div>
+    </div>
+    <div class="box">
+        <div class="small" style="background-color: #FFC0C7;">
+            <h2>Numpy</h2>
+        </div>
+        <div class="small" style="background-color: #FFF4A3;">
+            <h2>ASP</h2>
+        </div>
+        <div class="small" style="background-color: #F3ECEA;">
+            <h2>AppML</h2>
+        </div>
+        <div class="small" style="background-color: #96D4D4;">
+            <h2>How to</h2>
+        </div>
+    </div>
+    <div class="box ">
+        <div class="box-1" style="background-color: #FFC0C7;">
+            <h2 style="font-weight: 500;">Machine Learning</h1>
+        </div>
+        <div class="box-1" style="background-color: #F3ECEA;">
+           <h2 style="font-weight: 500;">Artificial Intelligence</h1>
+        </div>
+    </div>
+    <div class="box ">
+        <div class="box-1" style="background-color: #96D4D4;">
+            <h2 style="font-weight: 500;">Statistics</h1>
+        </div>
+        <div class="box-1" style="background-color: #FFF4A3;">
+            <h2 style="font-weight: 500;">Data Science</h1>
+        </div>
+    </div>
+    </section>
+    <section  class="container-1">
+        <h1 style="text-align: center;font-weight: 700;font-size: 65px;margin-top: 0px;margin-bottom: 0px;">Color Picker</h1>
+        <h4 style="text-align: center;font-size: 20px;">W3Schools' famous color picker</h4>
+        <img src="img.gif" style="display: block;margin-left: auto;margin-right: auto;">
+    </section>
+    <section class="container-2">
+    <h1 style="font-family: 'Freckle Face', cursive;font-size:48px;margin:0px;">Code Game</h1>
+    <h2 style="font-family: 'Freckle Face', cursive;">Help the Lynx collect pine cones!</h2>
+    <img src="w3lynx_200.png" style="display: block;margin-left: auto;margin-right: auto;">
+    <button class="button-2" ><b>Play Button</b></button>
+    </section>
+    <section class="container-3">
+    <h2 style="font-size:45px;font-weight:700;margin:0px;">Exercises</h2>
+    <h4>Test yourself with exercises</h4>
+    <div class="btn-3">
+       <button class="one">HTML Exercises</button>
+       <button class="one">CSS Exercises</button>
+       <button class="one">JS Exercises</button>
+    <button class="one" id="Hide-1">Python Exercises</button>
+    <button class="one" id="Hide-1">SQL Exercises</button>
+    </div>
+    <div class="btn-3 btn-31" >
+         <button class="one two">SQL</button>
+        <button class="one two" id='Hide-0'>Python</button>
+        <button class="one two">Java</button>
+        <button class="one two">C#</button>
+        <button class="one two">C++</button>
+        <button class="one two" >PHP</button>
+        <button class="one two" id='Hide-0'>JQuery</button>
+    </div>
+    </section>
+    <section class="container-4">
+        <h2 style="font-size:45px;font-weight:700;">Web Templates</h2>
+        <h4>Browse our selection of <strong>free</strong> responsive HTML Templates</h4>
+        <img src="w3css_templates.jpg" class="img-4">
+        <button class="button-1 temp" >BROWSE TEMPLATES</button>
+    </section>
+    <section class="container-5">
+<h2 class="h2 51">Kickstart your career</h2>
+<p class="h2">Get certified by completing a course</p>
+<button class="three">Get Started</button>
+
+    </section>
+    <section class="container-6">
+        <div style="margin-top: 20px;">
+    <h2 style="font-size:45px;font-weight:700">How To Section</h2>
+    <h4 style="font-size: 20px;">Code snippets for HTML, CSS and JavaScript</h4>
+    <div class="full-row">
+        <div class="text-1">
+            <div class="menu">
+                <p>HOME</p>
+                <p>Clients</p>
+                <p>Contact</p>
+                <p>Address</p>
+            </div>
+    
+            <div class="textarea-1">
+                <h3>Full Sidebar</h3>
+                <p>This sidebar is of full height (100%) and always shown.</p>
+                <p>Scroll this window to see the "fixed" effect.</p>
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                    concludaturque et eum,
+                    altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+                    repudiandae nec et.
+                    Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                    concludaturque et eum,
+                    altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+                    repudiandae nec et.
+                    Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+            </div>
+        </div>
+        <div class="text-1 text-12">
+            <div class="menu1">
+                <p>HOME</p>
+                <p>Clients</p>
+                <p>Contact</p>
+                <p>Address</p>
+            </div>
+    
+            <div class="textarea-1">
+                <h3>Full Sidebar</h3>
+                <p>This sidebar is of full height (100%) and always shown.</p>
+                <p>Scroll this window to see the "fixed" effect.</p>
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                    concludaturque et eum,
+                    altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+                    repudiandae nec et.
+                    Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                    concludaturque et eum,
+                    altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+                    repudiandae nec et.
+                    Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+            </div>
+        </div>
+    </div>
+    <button class="button-1  temp temp1">LEARN HOW TO</button>
+    </div>
+    </section>
+    <section class="container-7">
+       <div class="footer-1">
+          <div class="footbut">
+              <button class="footbut-one">COURSES</button>
+            <button class="footbut-one">QUIZZES</button>
+            <button class="footbut-one">EXERCISES</button>
+          </div>
+          <div class="footbut">
+             <p>FORUM</p>
+             <p>|</p>
+             <p>ABOUT</p>
+          </div>
+          </div>
+          <div class="footer-1" style="margin-top: 10px;justify-content: flex-end;">
+            <div class="footbut" >
+                <i class="fa fa-instagram" style="font-size:24px;color: white;"></i>
+                <i class="fa fa-facebook" style="font-size:24px;color: white;margin-left: 20px;"></i>
+                <i class="fa fa-linkedin" style="font-size:24px;color: white;margin-left: 20px;"></i>
+            </div>
+          </div>
+          <div class="footer-1">
+        <p style="color: white;text-align: center;">
+            W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and
+            basic understanding. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot
+            warrant full correctness of
+            all content. While using this site, you agree to have read and accepted our <a >terms of use</a>, <a >cookie and privacy policy</a>.<br>
+            <a>Copyright 1999-2021</a> by Refsnes Data. All Rights
+            Reserved.<br><br>
+        </p>
+        </div>
+        <i class="fa fa-thumbs-up" style="font-size:48px;margin-left:50%;color: white;"></i>
+        <div style="display: flex;justify-content: center;">
+<button class="button-1 temp temp2" style="background-color: #04aa6b;display: block;">W3SCHOOLS SHOP</button>
+
+    </div>
+    </section>
+    <script>
+
+        function exe() {
+            var y = document.getElementsByClassName("tutorial")[0];
+            var x = document.getElementsByClassName("exercises")[0];
+            var z = document.getElementsByClassName("references")[0];
+            var w = window.innerWidth;
+
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                y.style.display = "none";
+                z.style.display = "none";
+            } else {
+                x.style.display = "none";
+            }
+            if (w < 853)
+                x.style.display = "none";
+        }
+        function tut() {
+            var y = document.getElementsByClassName("tutorial")[0];
+            var x = document.getElementsByClassName("exercises")[0];
+            var z = document.getElementsByClassName("references")[0];
+            var w = window.innerWidth;
+
+            if (y.style.display === "none") {
+                y.style.display = "block";
+                x.style.display = "none";
+                z.style.display = "none";
+            } else {
+                y.style.display = "none";
+            }
+            if (w < 853)
+                y.style.display = "none";
+        }
+        function ref() {
+            var y = document.getElementsByClassName("tutorial")[0];
+            var x = document.getElementsByClassName("exercises")[0];
+            var z = document.getElementsByClassName("references")[0];
+            var w = window.innerWidth;
+
+            if (z.style.display === "none") {
+                z.style.display = "block";
+                y.style.display = "none";
+                x.style.display = "none";
+            } else {
+                z.style.display = "none";
+            }
+            if (w < 853)
+                z.style.display = "none";
+        }
+        function menu() {
+
+            var z = document.getElementsByClassName("menu-list")[0];
+
+            if (z.style.display === "none") {
+                z.style.display = "block";
+            }
+            else {
+                z.style.display = "none";
+            }
+
+        }
+    </script>
+</body>
+</html>
